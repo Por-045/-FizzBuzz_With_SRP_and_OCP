@@ -6,8 +6,9 @@ def fizzbuzz(number):
             mylist.append('Buzz')
         elif number % 9 == 0:
             mylist.append('Fizz')
-
     elif number % 5 == 0:
-       mylist.append('Buzz')
+        mylist.append('Buzz')
+        if number % 25 == 0:
+            mylist.append('Buzz')
 
     return ''.join(mylist)

@@ -43,8 +43,8 @@ class FizzBuzzModulusBy5Test(unittest.TestCase):
 
         self.assertEqual(result, excepted_result)
 
-    def test_give_6775_should_buzz(self):
-        number = 6775
+    def test_give_6785_should_buzz(self):
+        number = 6785
         excepted_result = 'Buzz'
 
         result = fizzbuzz(number)
@@ -96,6 +96,31 @@ class FizzBuzzModulusBy9Test(unittest.TestCase):
     def test_give_8181_should_fizzfizz(self):
         number = 8181
         excepted_result = 'FizzFizz'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+
+class FizzBuzzModulusBy25Test(unittest.TestCase):
+    def test_give_25_should_buzzbuzz(self):
+        number = 25
+        excepted_result = 'BuzzBuzz'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+
+    def test_give_5075_should_buzzbuzz(self):
+        number = 5075
+        excepted_result = 'BuzzBuzz'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+
+    def test_give_9725_should_buzzbuzz(self):
+        number = 9725
+        excepted_result = 'BuzzBuzz'
 
         result = fizzbuzz(number)
 
