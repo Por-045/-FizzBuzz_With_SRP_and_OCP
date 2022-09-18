@@ -1,8 +1,7 @@
 from src.fizzbuzz import fizzbuzz
-
 import unittest
 
-class FizzBuzzTest(unittest.TestCase):
+class FizzBuzzTestModulusBy3(unittest.TestCase):
     def test_give_3_should_fizz(self):
         number = 3
         excepted_result = 'Fizz'
