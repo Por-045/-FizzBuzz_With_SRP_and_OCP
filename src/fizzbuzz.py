@@ -3,8 +3,8 @@ def fizzbuzz(number):
     if number % 3 == 0:
         mylist.append('Fizz')
         if number % 5 == 0:
-            mylist.append('Fizz')
+            mylist.append('Buzz')
     elif number % 5 == 0:
-       mylist.append('Fizz')
+       mylist.append('Buzz')
 
     return ''.join(mylist)
