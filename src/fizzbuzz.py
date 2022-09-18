@@ -1,2 +1,2 @@
-def fizzbuzz(number):
+def isfizz(number):
     return 'Fizz'
