@@ -176,3 +176,35 @@ class FizzBuzzNotMetConditionTest(unittest.TestCase):
 
         self.assertEqual(result, excepted_result)
 
+class FizzBuzzNotFrom0And10000Test(unittest.TestCase):
+    def test_give_n1_should_notfrom0and10000(self):
+        number = -1
+        excepted_result = 'NotFrom0And10000'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+
+    def test_give_10001_should_notfrom0and10000(self):
+        number = 10001
+        excepted_result = 'NotFrom0And10000'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+
+    def test_give_n15_should_notfrom0and10000(self):
+        number = -15
+        excepted_result = 'NotFrom0And10000'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+
+    def test_give_30000_should_notfrom0and10000(self):
+        number = 30000
+        excepted_result = 'NotFrom0And10000'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
