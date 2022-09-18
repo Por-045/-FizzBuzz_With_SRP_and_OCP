@@ -151,3 +151,28 @@ class FizzBuzzModulusBy9and25Test(unittest.TestCase):
 
         self.assertEqual(result, excepted_result)
 
+class FizzBuzzNotMetConditionTest(unittest.TestCase):
+    def test_give_1_should_nofizzbuzz(self):
+        number = 1
+        excepted_result = 'NoFizzBuzz'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+
+    def test_give_4444_should_nofizzbuzzz(self):
+        number = 4444
+        excepted_result = 'NoFizzBuzz'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+
+    def test_give_9998_should_nofizzbuzz(self):
+        number = 9998
+        excepted_result = 'NoFizzBuzz'
+
+        result = fizzbuzz(number)
+
+        self.assertEqual(result, excepted_result)
+

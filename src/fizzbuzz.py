@@ -12,5 +12,7 @@ def fizzbuzz(number):
         mylist.append('Buzz')
         if number % 25 == 0:
             mylist.append('Buzz')
+    else:
+        mylist.append('NoFizzBuzz')
 
     return ''.join(mylist)
