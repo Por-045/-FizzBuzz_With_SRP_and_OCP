@@ -4,6 +4,9 @@ def fizzbuzz(number):
         mylist.append('Fizz')
         if number % 5 == 0:
             mylist.append('Buzz')
+        elif number % 9 == 0:
+            mylist.append('Fizz')
+
     elif number % 5 == 0:
        mylist.append('Buzz')
 
