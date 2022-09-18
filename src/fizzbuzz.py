@@ -1,9 +1,10 @@
 def fizzbuzz(number):
-    if number % 3 == 0 and number % 5 == 0:
-        return 'FizzBuzz'
-
+    mylist = []
     if number % 3 == 0:
-        return 'Fizz'
-
+        mylist.append('Fizz')
+        if number % 5 == 0:
+            mylist.append('Fizz')
     elif number % 5 == 0:
-        return 'Buzz'
+       mylist.append('Fizz')
+
+    return ''.join(mylist)
